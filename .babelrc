@@ -1,0 +1,17 @@
+{
+    "presets": [
+        "@babel/env"
+    ],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "alias": {}
+            },
+        ],
+        [
+            "@babel/plugin-proposal-class-properties",
+            {}
+        ]
+    ]
+}

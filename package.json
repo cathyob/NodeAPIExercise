@@ -1,0 +1,22 @@
+{
+  "name": "nodecourseapiproblemset",
+  "version": "1.0.0",
+  "description": "api exercise",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon index.js --exec babel-node"
+  },
+  "author": "Cathy OBrien",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "@babel/plugin-proposal-class-properties": "^7.3.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.2",
+    "babel-plugin-module-resolver": "^3.1.1"
+  }
+}
