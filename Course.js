@@ -1,5 +1,6 @@
 export default class Course {
     constructor(data, id) {
+        // convert json to model object and only expose data we want to share
         this.courseId = id;
         this.courseArea = data.course_area;
         this.courseDesc = data.course_desc;
@@ -11,7 +12,9 @@ export default class Course {
 
         for (const term in data.terms) {
             const instructors = data.terms[term].instructors
+            // could use an ES6 function
             for (let i = 0; i < instructors.length; i += 1) {
+                // add is a function on the Set() to add unique values
                 this.terms.add(instructors[i]);
             }
         }
